@@ -14,4 +14,5 @@
     <li>Line endings: Unix</li>
 </ul>
 
-[<h2>JavaScript Conventions</h2>](../blob/master/javascript.md)
+<h2>Javascript Conventions</h2>
+[ВИЖ!](../blob/master/javascript.md)
