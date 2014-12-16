@@ -15,4 +15,4 @@
 </ul>
 
 <h2>Javascript Conventions</h2>
-[ВИЖ!](javascript.md)
+[Към Javascript DevConventions!](javascript.md)
