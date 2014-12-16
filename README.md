@@ -15,4 +15,4 @@
 </ul>
 
 <h2>Javascript Conventions</h2>
-[ВИЖ!](../blob/master/javascript.md)
+[ВИЖ!](javascript.md)
