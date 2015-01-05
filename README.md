@@ -16,3 +16,6 @@
 
 <h2>Javascript Conventions</h2>
 [Към Javascript DevConventions!](javascript.md)
+
+<h2>SASS Conventions - in progress</h2>
+[Към SASS DevConventions!](sass.md)
