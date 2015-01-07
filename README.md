@@ -14,7 +14,7 @@
     <li>Line endings: Unix</li>
 </ul>
 
-<h2>HTML & CSS Conventions - in progress</h2>
+<h2>HTML & CSS Conventions</h2>
 [Към HTML & CSS DevConventions!](HTML and CSS.md)
 
 <h2>SASS Conventions - in progress</h2>
