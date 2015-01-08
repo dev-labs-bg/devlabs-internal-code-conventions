@@ -64,6 +64,7 @@ $base-font-family: Helvetica, Arial, sans-serif !default;
 - действие към елемента;
 - комбинация с други класове;
 - комбинация с други елементи;
+Оставяйте по един свободен ред между отделните типове.
 
 ```css
 .element {
@@ -80,16 +81,60 @@ $base-font-family: Helvetica, Arial, sans-serif !default;
     width: 400px;
 
     &:hover {
-        text-decoration:underline;
+        text-decoration: underline;
     }
 
     &.active {
-        margin:10px;
+        color: #fff;
+    }
+
+    & > li {
+        margin: 10px;
     }
 
     & + ul {
-        margin-left:10px;
+        margin-left: 10px;
     }
 }
 ```
+###Как да кръщаваме имената на елементите спрямо съществително или прилагателно
+Когато четем един SASS код е хубаво да имаме ясна представа за структурата на HTML елементите и в какво състояние са те:
 
+От тип object - традиционно използваните елементи:
+```css
+.noun {}            // examples: .button, .menu, .textbox, .header
+```
+
+От тип parent-child - когато има връзка между елементите и също е съществително:
+```css
+.noun {}            // parent: .post
+.noun-noun {}       // child:  .post-title
+```
+
+От тип subclasses - когато елемента е превъзхождан от прилагателно:
+```css
+adjective-noun {}  // example: .dropdown-button
+```
+
+От тип modifiers - когато винаги са прилагателни:
+```css
+.is-state {}        // state: is-selected, is-hidden
+.adjective {}       // examples: .left, .right, .block, .inline
+```
+
+###Стъпаловидна структура
+
+Бъдете внимателни със вашите нива на стъпаловидност. Препоръчителното максимално ниво е до 3 нива навътре:
+```css
+.weather {
+    .cities {
+        li {
+            // no more!
+        }
+    }
+}
+```
+Препоръчителни максималните редове на Вашата стъпаловидна структура са до 50 реда. Ако Вашият SASS block код превиши 50 реда има голяма вероятност да не събере на Вашият editor screen и да се превърне в труден за четене. Прегледайте си кода, може да използвате @import или @mixins, а проверихте ли Naming конвенциите.
+
+###Използвайте SourceMapping
+Не забравяйте да добавите опцията за SourceMapping когато конвентирате кода от sass към css. Той ви помага да намерите всяко едно property от inspect elementa, в кой от всичките инклуднати SASS файловете се намира и на кой ред.
