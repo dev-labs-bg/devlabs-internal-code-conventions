@@ -1,4 +1,4 @@
-#SASS Conventions:
+#SASS Conventions and rules:
 
 ###Directory Structure
 Спазвайте правилна структура на Вашите папки. Разбийте style кода си на модули и ги разпределете в правилните директории:
@@ -6,43 +6,56 @@
 ```html
 sass/ 
 | 
-|– components/ 
+|– modules/              # all uncompiled css code
 |   |– _fonts.scss       # Fonts
+|   |– _mixins.scss      # Mixins
+|   |– _templates.scss   # Templates 
+|   |– _colors.scss      # Colors
+|   |– _variables.scss   # Variables
+|   ...                  # Etc… 
+| 
+|– components/
+|   |– _base.scss        # Base style
+|   |– _forms.scss       # Forms and form elements
 |   |– _buttons.scss     # Buttons
-|   |– _carousel.scss    # Carousel
-|   |– _dropdown.scss    # Dropdown 
-|   |– _navigation.scss  # Navigation 
+|   |– _slider.scss      # Slider
+|   |– _nagivation.scss  # Navigation
 |   ...                  # Etc… 
 | 
-|– helpers/ 
-|   |– _variables.scss   # Sass Variables 
-|   |– _functions.scss   # Sass Functions 
-|   |– _mixins.scss      # Sass Mixins 
-|   |– _helpers.scss     # Class & placeholders helpers 
-|   ...                  # Etc… 
-| 
-|– layout/ 
-|   |– _grid.scss        # Grid system 
+|– layouts/ 
+|   |– _grid.scss        # Grid system
 |   |– _header.scss      # Header 
-|   |– _footer.scss      # Footer 
-|   |– _sidebar.scss     # Sidebar 
-|   |– _forms.scss       # Forms 
-|   ...                  # Etc… 
+|   |– _footer.scss      # Footer
+|   |– _sidebar.scss     # Sidebar
+|   ...                  # Etc…
 | 
 |– pages/ 
-|   |– _home.scss        # Home specific styles 
-|   |– _contact.scss     # Contact specific styles 
+|   |– _home.scss        # Home specific styles
+|   |– _contact.scss     # Contact specific styles
 |   ...                  # Etc… 
 | 
-|– plugins/ 
+|– vendors/              # All plugins 
 |   |– _bootstrap.scss   # Bootstrap 
 |   |– _jquery-ui.scss   # jQuery UI
 |   |– _datepicker.scss  # Datepicker
 |   ...                  # Etc… 
 | 
 | 
-`– main.scss             # основният Sass файл 
+`– style.scss             # Main SASS file
 ```
+
+###Правила
+- Основният style.scss трябва да съдържа са импорти, които да са в следната последователност:
+  - modules
+  - componenets
+  - layouts
+  - pages
+  - vendors
+- папката modules трябва да съдържа само uncompiled код. Uncompiled code е код, който не може да съществува самостоятелно т.н. трябва да бъде наследен от някой селектор за да бъде компилиран, в противен случай се игнорира от SASS
+- template.scss файла трябва да съдържа само silent ( "тихи" ) класове, като всеки от тях трябва да представлява template. Под template се разбира основната структура на class-a, включваща стил както за родителя, така и за всички нейни child елементи.
+- промениливите за проекта трябва да се съръждат само във _variables.scss
+- base.scss файла трябва да съдържа код без никаква конктретика
+
 ###Подходящи имена на променливи
 Избирайте подходящи имена за Вашите промениливи
 
