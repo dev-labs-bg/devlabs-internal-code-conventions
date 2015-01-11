@@ -1,0 +1,18 @@
+// Use this when including a font
+@mixin font-face($fontFamily: myFont, $eotFileSrc: 'myFont.eot', $woffFileSrc: 'myFont.woff', $ttfFileSrc: 'myFont.ttf') {
+  font-family: $fontFamily;
+  src: url($eotFileSrc)  format('eot'),
+       url($woffFileSrc) format('woff'),
+       url($ttfFileSrc)  format('truetype');
+}
+
+// Use this mixin for internal fonts (in project folder)
+@mixin font ($font-name: default-font-name) {
+    font-family: '#{$font-name}', Arial, sans-serif;
+}
+
+// Use this mixin for external fonts (google fonts)
+@mixin family-font ($font-weight: default-font-weight) {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: $font-weight;
+}

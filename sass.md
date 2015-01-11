@@ -70,7 +70,6 @@ $base-font-family: Helvetica, Arial, sans-serif !default;
 ```
 ###Последователност
 Последователността на свойствата е изключително важен фактор, особено когато нов член към екипа чете кода ни:
-- $variables;
 - @extends;
 - @includes;
 - свойства на елемента;
@@ -81,8 +80,6 @@ $base-font-family: Helvetica, Arial, sans-serif !default;
 
 ```css
 .element {
-    $bg-color: #D90000;
-
     @extend .rounded-border;
 
     @include data-module;
@@ -126,12 +123,12 @@ $base-font-family: Helvetica, Arial, sans-serif !default;
 
 От тип subclasses - когато елемента е превъзхождан от прилагателно:
 ```css
-adjective-noun {}  // example: .dropdown-button
+.adjective-noun {}  // example: .dropdown-button
 ```
 
 От тип modifiers - когато винаги са прилагателни:
 ```css
-.is-state {}        // state: is-selected, is-hidden
+.is-state {}        // state: .is-selected, .is-hidden
 .adjective {}       // examples: .left, .right, .block, .inline
 ```
 
