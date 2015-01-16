@@ -264,7 +264,7 @@ var moneys = true;
 
 Правилно:
 ```js
-function doSomething(){
+function doSomething() {
     var onAwesomeClick = function(){
         var doSomethingWithPerson = function(){
             //
