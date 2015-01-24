@@ -168,7 +168,6 @@ h3 {
 ###Полезно връзки
 - Как да си инсталираме SASS: http://sass-lang.com/install
 - Документация на SASS: http://sass-lang.com/documentation/file.SASS_REFERENCE.html
-- 
 
 ###Directory Structure
 Спазвайте правилна структура на Вашите папки. Разбийте style кода си на модули и ги разпределете в правилните директории:
