@@ -16,7 +16,7 @@
 Бъдете сигурни, че Вашият едитор използва UTF-8 като character encoding without BOM и не забравяйте да добавите HTML тага към Вашият темплейт:
 
 ```html
-<meta charset="utf-8" />
+<meta charset="utf-8">
 ```
 
 ###Пишете коментари
