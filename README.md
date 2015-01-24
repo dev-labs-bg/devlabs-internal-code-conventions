@@ -14,11 +14,11 @@
     <li>Line endings: Unix</li>
 </ul>
 
-<h2>HTML & CSS Conventions</h2>
-[Към HTML & CSS DevConventions!](HTML and CSS.md)
+<h2>HTML Conventions</h2>
+[Към HTML DevConventions!](HTML.md)
 
-<h2>SASS Conventions - in progress</h2>
-[Към SASS DevConventions!](sass.md)
+<h2>Style Conventions</h2>
+[Към Style DevConventions!](style.md)
 
 <h2>Javascript Conventions</h2>
 [Към Javascript DevConventions!](javascript.md)
