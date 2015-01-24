@@ -44,27 +44,15 @@
 
 Грешно:
 ```html
-<a class='maia-button maia-button-secondary'>Sign in</a>
+<a href="javascript:;" class='maia-button maia-button-secondary'>Sign in</a>
 ```
 
 Правилно:
 ```html
-<a class="maia-button maia-button-secondary">Sign in</a>
+<a href="javascript:;" class="maia-button maia-button-secondary">Sign in</a>
 ```
 
 ###Кръщавайте с подходящи имена ID-тата и class-овете
-Използвайте подходящи имена за Вашите елементи. Те трябва да бъдат с минимална дължина, но да са разбираеми:
-
-Грешни имена на селектори:
-```html
-<div id="menu-1901" class="green-button nivagtion"></div>
-```
-
-Правилни имена:
-```html
-<div id="main-menu" class="main-button nav"></div>
-```
-
 В слаучай, че името на Вашият class или ID се състои от няколко думи, правилният начин за изписването на класа е чрез свързващият символ "-". Не използвайте долно тире или CamelCase.
 
 Грешно:
@@ -76,6 +64,18 @@
 Правилно:
 ```html
 <div class="blue-text"></div>
+```
+
+Използвайте подходящи имена за Вашите елементи. Те трябва да бъдат с минимална дължина, но да са разбираеми:
+
+Грешни имена на селектори:
+```html
+<div id="menu-1901" class="green-button nivagtion"></div>
+```
+
+Правилни имена:
+```html
+<div id="main-menu" class="main-button nav"></div>
 ```
 
 ###Не забравяйте затварящият таг
