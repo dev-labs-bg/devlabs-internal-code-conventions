@@ -77,3 +77,20 @@
 ```html
 <div class="blue-text"></div>
 ```
+
+###Не забравяйте затварящият таг
+За елементи, които са self-closing преди затварящият таг се поставя един празен интервал
+
+Грешно:
+```html
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<img src="http://devlabs.bg/img/DevLabs_Logo.png" alt="Devlabs logo"/>
+<br/>
+```
+
+Правилно:
+```html
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<img src="http://devlabs.bg/img/DevLabs_Logo.png" alt="Devlabs logo" />
+<br />
+```
