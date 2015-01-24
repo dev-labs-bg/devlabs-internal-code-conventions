@@ -16,7 +16,7 @@
 
 Без trailing whitespace-чета!
 <ul>
-    <li>Sublime 2/3 <a href="//github.com/SublimeText/TrailingSpaces" target="_blank"></a>плъгин, който показва/трие trailing whitespace-чета в кода</li>
+    <li>Sublime 2/3 [плъгин]("//github.com/SublimeText/TrailingSpaces"), който показва/трие trailing whitespace-чета в кода</li>
 </ul>
 
 <h2>HTML Conventions</h2>
