@@ -1,4 +1,167 @@
-#SASS Conventions and rules:
+#Style Conventions and rules:
+
+###Protocols
+По възможност пропускайте протоколната част ( HTTP:, HTTPS: ) при инклудването на мултимедийни файлове
+
+Грешно:
+```css
+.example {
+  background: url(http://www.google.com/images/example);
+}
+```
+Правилно:
+```css
+.example {
+  background: url(//www.google.com/images/example);
+}
+```
+
+###Пишете коментари
+Коментарите са изключително важна част от Вашият код - НЕ ги забравяйте. Грешна практика е да НЕ се пишат коментари за да се спести от големината на файла (за тази цел си има минифициране). Направете Вашият код четлив и разбираем, а не Вашият колега да "гадае" какво се случва.
+
+При стиловите страниците поставяйте коментари над всеки един селектор, като го изпишете по следният начин:
+```css
+/* Lorem Ipsum is simply dummy text */
+.white-color {
+    color: #fff;
+}
+```
+
+Понякога коменарите може да са прекалено дълги и се налага да се разбият на няколко реда:
+```css
+/**
+ * Lorem Ipsum is simply dummy text
+ * of the printing and typesetting industry.
+ */
+```
+
+Ако е нужно да поставяте някъде TODO коментар, то правилния начин за изписването му е следният:
+```css
+/**
+ * TODO: This is a todo statement that describes an atomic task to be completed
+ *   at a later date. It wraps after 80 characters and following lines are
+ *   indented by 2 spaces.
+ */
+```
+
+###Как да използваме кавичките
+Използвайте двойни (' ') кавички, когато се налага да обградите атрибут селектори
+
+Грешно:
+```html
+@import url("//www.google.com/css/maia.css");
+
+html {
+  font-family: "open sans", arial, sans-serif;
+}
+```
+
+Правилно:
+```html
+@import url(//www.google.com/css/maia.css);
+
+html {
+  font-family: 'open sans', arial, sans-serif;
+}
+```
+
+###Използвайте Shorthand свойства
+CSS предоставя възможност за изписване на по-кратък начин на някои свойства - използвайте ги при възможност.
+
+Грешно:
+```css
+border-top-style: none;
+background-color: #e5e5e5;
+background-image: url(http://www.vzonata.com/wp-content/themes/twentyeleven/images/bg.jpg);
+background-repeat: repeat;
+background-position: left center;
+padding-bottom: 2em;
+padding-left: 1em;
+padding-right: 1em;
+padding-top: 0;
+```
+
+Правилно:
+```css
+border-top-style: none;
+background: url(http://www.vzonata.com/wp-content/themes/twentyeleven/images/bg.jpg) no-repeat left center #e5e5e5;
+padding: 0 1em 2em;
+```
+
+###Не използвайте единици след стойност "0"
+```css
+margin: 0;
+padding: 0 1em 2em;
+```
+
+###Не използвайте "водеща" нула за стойност
+Не използвайте "0"-та за стойности, който се намират между интервала -1 и 1.
+
+Грешно:
+```css
+font-size: 0.8em;
+```
+
+Правилно:
+```css
+font-size: .8em;
+```
+###Поставяйте интервал между селетора и деклариращият блок
+Винаги поставяйте по един празен интервал между селетора и деклариращият блок. Никога не ги разделяйте на редове:
+
+Грешно:
+```css
+#video{
+    margin-top: 1em;
+}
+
+#video
+{
+    margin-top: 1em;
+}
+```
+
+Правилно:
+```css
+#video {
+    margin-top: 1em;
+}
+```
+
+###Поставяйте интервал между свойствата и съответната стойност
+
+Грешно:
+```css
+.example {
+    color:blue;
+}
+```
+
+Правилно:
+```css
+.example {
+    color: blue;
+}
+```
+
+###Винаги започвайте всеки селектор на нов ред
+
+Грешно:
+```css
+a:focus, a:active {
+    position: relative; top: 1px;
+}
+```
+
+Правилно:
+```css
+h1,
+h2,
+h3 {
+    font-weight: normal;
+    line-height: 1.2;
+}
+```
 
 ###Directory Structure
 Спазвайте правилна структура на Вашите папки. Разбийте style кода си на модули и ги разпределете в правилните директории:
