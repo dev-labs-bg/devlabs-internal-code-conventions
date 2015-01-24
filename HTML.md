@@ -83,14 +83,14 @@
 
 Грешно:
 ```html
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
 <img src="http://devlabs.bg/img/DevLabs_Logo.png" alt="Devlabs logo"/>
 <br/>
 ```
 
 Правилно:
 ```html
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
 <img src="http://devlabs.bg/img/DevLabs_Logo.png" alt="Devlabs logo" />
 <br />
 ```
