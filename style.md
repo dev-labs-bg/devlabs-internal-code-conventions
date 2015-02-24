@@ -44,7 +44,7 @@
 ```
 
 ###Как да използваме кавичките
-Използвайте двойни (' ') кавички, когато се налага да обградите атрибут селектори
+Използвайте единични (' ') кавички, когато се налага да обградите атрибут селектори
 
 Грешно:
 ```html
@@ -88,6 +88,7 @@ padding: 0 1em 2em;
 ```
 
 ###Не използвайте единици след стойност "0"
+Правилно:
 ```css
 margin: 0;
 padding: 0 1em 2em;
@@ -110,11 +111,11 @@ font-size: .8em;
 
 Грешно:
 ```css
-#video{
+.video{
     margin-top: 1em;
 }
 
-#video
+.video
 {
     margin-top: 1em;
 }
@@ -122,7 +123,7 @@ font-size: .8em;
 
 Правилно:
 ```css
-#video {
+.video {
     margin-top: 1em;
 }
 ```
@@ -164,60 +165,63 @@ h3 {
 
 #SASS Conventions and rules:
 
+###Полезно връзки
+- Как да си инсталираме SASS: http://sass-lang.com/install
+- Документация на SASS: http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+
 ###Directory Structure
 Спазвайте правилна структура на Вашите папки. Разбийте style кода си на модули и ги разпределете в правилните директории:
 
 ```html
-sass/ 
-| 
+sass/
+|
 |– modules/              # all uncompiled css code
 |   |– _fonts.scss       # Fonts
 |   |– _mixins.scss      # Mixins
-|   |– _templates.scss   # Templates 
+|   |– _templates.scss   # Templates
 |   |– _colors.scss      # Colors
 |   |– _variables.scss   # Variables
-|   ...                  # Etc… 
-| 
+|   ...                  # Etc…
+|
 |– components/
 |   |– _base.scss        # Base style
 |   |– _forms.scss       # Forms and form elements
 |   |– _buttons.scss     # Buttons
 |   |– _slider.scss      # Slider
 |   |– _nagivation.scss  # Navigation
-|   ...                  # Etc… 
-| 
-|– layouts/ 
+|   ...                  # Etc…
+|
+|– layouts/
 |   |– _grid.scss        # Grid system
-|   |– _header.scss      # Header 
+|   |– _header.scss      # Header
 |   |– _footer.scss      # Footer
 |   |– _sidebar.scss     # Sidebar
 |   ...                  # Etc…
-| 
-|– pages/ 
+|
+|– pages/
 |   |– _home.scss        # Home specific styles
 |   |– _contact.scss     # Contact specific styles
-|   ...                  # Etc… 
-| 
-|– vendors/              # All plugins 
-|   |– _bootstrap.scss   # Bootstrap 
+|   ...                  # Etc…
+|
+|– vendors/              # All plugins
+|   |– _bootstrap.scss   # Bootstrap
 |   |– _jquery-ui.scss   # jQuery UI
 |   |– _datepicker.scss  # Datepicker
-|   ...                  # Etc… 
-| 
-| 
+|   ...                  # Etc…
+|
+|
 `– style.scss             # Main SASS file
 ```
 
 ###Правила
-- Основният style.scss трябва да съдържа са импорти, които да са в следната последователност:
+- Основният style.scss трябва да съдържа само импорти в примерна последователност на директориите:
   - modules
   - componenets
   - layouts
   - pages
   - vendors
-- папката modules трябва да съдържа само uncompiled код. Uncompiled code е код, който не може да съществува самостоятелно т.н. трябва да бъде наследен от някой селектор за да бъде компилиран, в противен случай се игнорира от SASS
-- template.scss файла трябва да съдържа само silent ( "тихи" ) класове, като всеки от тях трябва да представлява template. Под template се разбира основната структура на class-a, включваща стил както за родителя, така и за всички нейни child елементи.
-- промениливите за проекта трябва да се съръждат само във _variables.scss
+- по възможност в template.scss файла съръжайте само silent ( "тихи" ) класове. Под template се разбира основната структура на class-a, включваща стил както за родителя, така и за всички нейни child елементи.
+- промениливите за проекта трябва да се сърържат само във _variables.scss
 - base.scss файла трябва да съдържа код без никаква конктретика
 
 ###Подходящи имена на променливи
@@ -229,7 +233,7 @@ $red-button: #ff000;
 ```
 Желателно е да ги кръщавате спрямо към какво се отнасят
 ```css
-$primary-color: #333;
+$primary-color: #ff000;
 $base-font-family: Helvetica, Arial, sans-serif !default;
 ```
 ###Последователност
@@ -240,32 +244,25 @@ $base-font-family: Helvetica, Arial, sans-serif !default;
 - действие към елемента;
 - комбинация с други класове;
 - комбинация с други елементи;
-Оставяйте по един свободен ред между отделните типове.
 
 ```css
 .element {
     @extend .rounded-border;
-
     @include data-module;
-
     cursor: pointer;
     height: 300px;
     margin: 0 auto;
     padding: 0;
     width: 400px;
-
     &:hover {
         text-decoration: underline;
     }
-
     &.active {
         color: #fff;
     }
-
     & > li {
         margin: 10px;
     }
-
     & + ul {
         margin-left: 10px;
     }
