@@ -20,8 +20,6 @@
 - [Към STYLE DevConventions!](style.md)
 - [Към JavaScript DevConventions!](javascript.md)
 - [Към Git DevConventions!](git.md)
-- [Към GitFlow Chart-а v1.1](http://devlabs-projects.com/docs/Git-Flow-for-DevLabs-1.1.svg)
-
 
 ## Sublime плъгини, които enforce-ват конвенциите
 Ако ви е трудно да спазвате правилата, може да си сложите плъгин който да ви "пищи" когато не спазвате конвенциите. Сложете си [SublimeLinter](http://sublimelinter.readthedocs.org/en/latest/) и след това:
