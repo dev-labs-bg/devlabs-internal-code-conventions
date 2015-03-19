@@ -15,5 +15,5 @@
 
 ## Конвенции:
 - [Към HTML DevConventions!](HTML.md)
-- [Към Style DevConventions!](style.md)
-- [Към Javascript DevConventions!](javascript.md)
+- [Към STYLE DevConventions!](style.md)
+- [Към JavaScript DevConventions!](javascript.md)
