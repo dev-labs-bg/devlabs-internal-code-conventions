@@ -216,7 +216,7 @@ h1 {
 ```
 
 
-# SASS Conventions & rules
+# SASS Conventions & Rules
 
 ## Полезни връзки
 - [Как да си инсталираме SASS](http://sass-lang.com/install)

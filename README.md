@@ -17,3 +17,4 @@
 - [Към HTML DevConventions!](html.md)
 - [Към STYLE DevConventions!](style.md)
 - [Към JavaScript DevConventions!](javascript.md)
+- [Към GitFlow Chart-а](http://devlabs-projects.com/docs/Git-Flow-for-DevLabs-1.0.svg)
