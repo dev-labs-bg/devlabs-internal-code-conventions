@@ -1,4 +1,4 @@
-# CSS Conventions & Rules
+# CSS Conventions
 
 ## Protocols
 По възможност пропускайте протоколната част ( HTTP:, HTTPS: ) при инклудването на мултимедийни файлове
