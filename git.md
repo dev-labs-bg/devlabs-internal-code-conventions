@@ -9,3 +9,13 @@
 ```
 devlabs-internal-code-conventions
 ```
+
+## 8те Git-Flow правила важащи ФОФИСА:
+1. Не сери/мажи в кода ... сериозно, недей, защото тъй да се каже, [това не е библейско](http://memebg.com/media/created/l5xo1t.jpg).
+2. В master всичко е стабилно, в develop са готови features & fixes.
+3. Не push-ваме в master (освен ако не правим hotfix или не пускаме release).
+4. Всеки feature/промяна започва от develop с име feature/номер-име (пр. feature/01-login).
+5. Feature влиза в develop само след Pull Request. Същото важи за bugfix към release.
+6. В release само bugfix-и и докуметация. След това се merge с master и develop.
+7. Hotfix почва от master и свършва там (след Pull Request). Решава само малки и важни проблеми.
+8. Feature бранчовете винаги се качват горе, дори преди да са готови. Като са, се пуска Pull Request.
