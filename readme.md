@@ -13,8 +13,14 @@
 - Line endings: Unix
 - без trailing whitespace-чета! Sublime 2 / Sublime 3 [плъгин който показва/трие trailing whitespace-чета](http://github.com/SublimeText/TrailingSpaces) в кода
 
-## Конвенции
+## Конвенции & Правила
 - [Към HTML DevConventions!](html.md)
 - [Към STYLE DevConventions!](style.md)
 - [Към JavaScript DevConventions!](javascript.md)
 - [Към GitFlow Chart-а](http://devlabs-projects.com/docs/Git-Flow-for-DevLabs-1.0.svg)
+
+## Sublime плъгини, които enforce-ват конвенциите:
+Ако ви е трудно да спазвате правилата, може да си сложите плъгин който да ви "пищи" когато не спазвате конвенциите. Сложете си [SublimeLinter](http://sublimelinter.readthedocs.org/en/latest/) и след това:
+- за HTML конвенциите (**undefined**)
+- за JavaScript конвенциите инсталирайте [SublimeLinter JShint](https://github.com/SublimeLinter/SublimeLinter-jshint) и след това сложете в проекта си в папката със скриптовете [конфигурационен файл .jshintrc](https://github.com/superKalo/front-end-starter-template/blob/master/js/.jshintrc), който съдържа правилата от нашите конвенции
+- за STYLE/SASS конвенциите инсталирайте [Sublime​Linter contrib-scss-lint](https://packagecontrol.io/packages/SublimeLinter-contrib-scss-lint) и след това сложете в проекта си в папката със стиловете [конфигурационен файл .scss-lint.yml](https://github.com/superKalo/front-end-starter-template/blob/master/styles/.scss-lint.yml), който съдържа правилата от нашите конвенции
