@@ -19,7 +19,7 @@
 - [Към JavaScript DevConventions!](javascript.md)
 - [Към GitFlow Chart-а](http://devlabs-projects.com/docs/Git-Flow-for-DevLabs-1.0.svg)
 
-## Sublime плъгини, които enforce-ват конвенциите:
+## Sublime плъгини, които enforce-ват конвенциите
 Ако ви е трудно да спазвате правилата, може да си сложите плъгин който да ви "пищи" когато не спазвате конвенциите. Сложете си [SublimeLinter](http://sublimelinter.readthedocs.org/en/latest/) и след това:
 - за HTML конвенциите (**undefined**)
 - за JavaScript конвенциите инсталирайте [SublimeLinter JShint](https://github.com/SublimeLinter/SublimeLinter-jshint) и след това сложете в проекта си в папката със скриптовете [конфигурационен файл .jshintrc](https://github.com/superKalo/front-end-starter-template/blob/master/js/.jshintrc), който съдържа правилата от нашите конвенции
