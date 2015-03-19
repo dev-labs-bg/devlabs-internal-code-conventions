@@ -7,13 +7,13 @@
 
 Старт.
 
-## Основни настройки на Code Editor-а:
+## Основни настройки на Code Editor-а
 - 4 space-чета за indentation
 - "indentation using spaces", а не "using tabs".
 - Line endings: Unix
 - без trailing whitespace-чета! Sublime 2 / Sublime 3 [плъгин който показва/трие trailing whitespace-чета](http://github.com/SublimeText/TrailingSpaces) в кода
 
-## Конвенции:
-- [Към HTML DevConventions!](HTML.md)
+## Конвенции
+- [Към HTML DevConventions!](html.md)
 - [Към STYLE DevConventions!](style.md)
 - [Към JavaScript DevConventions!](javascript.md)
