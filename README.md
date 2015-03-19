@@ -1,4 +1,4 @@
-<h1>DevLabs Code Conventions</h1>
+# DevLabs Code Conventions
 
 Да. Всеки добър екип има вътрешни стандарти за писане на код.
 Крайно време е да се синхронизираме и да направим тази крачка, заедно.
@@ -7,23 +7,13 @@
 
 Старт.
 
-Основни настройки на Code Editor-а:
-<ul>
-    <li>4 space-чета за indentation</li>
-    <li>"indentation using spaces", а не "using tabs".</li>
-    <li>Line endings: Unix</li>
-</ul>
+## Основни настройки на Code Editor-а:
+- 4 space-чета за indentation
+- "indentation using spaces", а не "using tabs".
+- Line endings: Unix
+- без trailing whitespace-чета! Sublime 2 / Sublime 3 [плъгин който показва/трие trailing whitespace-чета](http://github.com/SublimeText/TrailingSpaces) в кода
 
-Без trailing whitespace-чета!
-<ul>
-    <li>Sublime 2/3 плъгин - http://github.com/SublimeText/TrailingSpaces, който показва/трие trailing whitespace-чета в кода</li>
-</ul>
-
-<h2>HTML Conventions</h2>
-[Към HTML DevConventions!](HTML.md)
-
-<h2>Style Conventions</h2>
-[Към Style DevConventions!](style.md)
-
-<h2>Javascript Conventions</h2>
-[Към Javascript DevConventions!](javascript.md)
+## Конвенции:
+- [Към HTML DevConventions!](HTML.md)
+- [Към Style DevConventions!](style.md)
+- [Към Javascript DevConventions!](javascript.md)
