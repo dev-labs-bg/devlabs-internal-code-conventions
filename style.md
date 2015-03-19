@@ -1,4 +1,4 @@
-# CSS Conventions and rules:
+# CSS Conventions & Rules
 
 ## Protocols
 По възможност пропускайте протоколната част ( HTTP:, HTTPS: ) при инклудването на мултимедийни файлове
@@ -25,7 +25,6 @@
     color: #fff;
 }
 ```
-
 Понякога коменарите може да са прекалено дълги и се налага да се разбият на няколко реда:
 ```css
 /**
@@ -33,7 +32,6 @@
  * of the printing and typesetting industry.
  */
 ```
-
 Ако е нужно да поставяте някъде TODO коментар, то правилния начин за изписването му е следният:
 ```css
 /**
@@ -43,8 +41,7 @@
  */
 ```
 
-## Как да използваме кавичките
-Използвайте единични (' ') кавички, когато се налага да обградите атрибут селектори
+## Използвайте единични (' ') кавички, когато се налага да обградите атрибут селектори
 
 Грешно:
 ```html
@@ -54,7 +51,6 @@ html {
   font-family: "Open Sans", Arial, sans-serif;
 }
 ```
-
 Правилно:
 ```html
 @import url('normalize.css');
@@ -64,8 +60,8 @@ html {
 }
 ```
 
-## Използвайте Shorthand свойства
-CSS предоставя възможност за изписване на по-кратък начин на някои свойства - използвайте ги при възможност, но не се оливайте!
+## Използвайте shorthand свойства
+CSS предоставя възможност за изписване на по-кратък начин на някои свойства - използвайте ги при възможност, но не се оливайте :)
 
 Грешно:
 ```css
@@ -79,7 +75,6 @@ padding-left: 1em;
 padding-right: 1em;
 padding-top: 0;
 ```
-
 Правилно:
 ```css
 border-top-style: none;
@@ -94,7 +89,6 @@ padding: 0 1em 2em;
 margin: 0px;
 padding: 0% 1em 2em;
 ```
-
 Правилно:
 ```css
 margin: 0;
@@ -108,7 +102,6 @@ padding: 0 1em 2em;
 ```css
 font-size: 0.8em;
 ```
-
 Правилно:
 ```css
 font-size: .8em;
@@ -128,7 +121,6 @@ font-size: .8em;
     margin-top: 1em;
 }
 ```
-
 Правилно:
 ```css
 .video {
@@ -137,14 +129,12 @@ font-size: .8em;
 ```
 
 ## Поставяйте интервал между свойствата и съответната стойност
-
 Грешно:
 ```css
 .example {
     color:blue;
 }
 ```
-
 Правилно:
 ```css
 .example {
@@ -153,14 +143,12 @@ font-size: .8em;
 ```
 
 ## Винаги започвайте всеки селектор на нов ред
-
 Грешно:
 ```css
 a:focus, a:active {
     position: relative; top: 1px;
 }
 ```
-
 Правилно:
 ```css
 a:focus,
@@ -169,14 +157,72 @@ a:active {
 }
 ```
 
+## Пишете hexadecimal цветовете с малки букви
+Грешно:
+```css
+h1 {
+    color: #FDFDFD
+}
+```
+Правилно:
+```css
+h1 {
+    color: #fdfdfd
+}
+```
 
-# SASS Conventions and rules:
+## Използвайте кавички за указване на път до картинка
+Грешно:
+```css
+div {
+    background-image: url(img/background.png);
+}
+```
+Правилно:
+```css
+div {
+    background-image: url('img/background.png');
+}
+```
+
+## Добавяйте точка и запетая след всяко правило
+Грешно:
+```css
+h1 {
+    font-size: 12px;
+    text-decoration: none
+}
+```
+Правилно:
+```css
+h1 {
+    font-size: 12px;
+    text-decoration: none;
+}
+```
+
+## По възможност, не използвайте ID-та за селектори
+Грешно:
+```css
+#page-header {
+    width: 960px;
+}
+```
+Правилно:
+```css
+.page-header {
+    width: 960px;
+}
+```
+
+
+# SASS Conventions & rules
 
 ## Полезни връзки
 - [Как да си инсталираме SASS](http://sass-lang.com/install)
 - [Документация на SASS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 
-## Directory Structure
+## Directory structure
 Спазвайте правилна структура на Вашите стилове. Вместо един голям чаршаф със стилове, разбийте кода си на модули и ги разпределете в правилните директории. Ето примерна структура:
 
 ```html
