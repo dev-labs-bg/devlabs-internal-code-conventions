@@ -19,3 +19,6 @@ devlabs-internal-code-conventions
 6. В release само bugfix-и и докуметация. След това се merge с master и develop.
 7. Hotfix почва от master и свършва там (след Pull Request). Решава само малки и важни проблеми.
 8. Feature бранчовете винаги се качват горе, дори преди да са готови. Като са, се пуска Pull Request.
+
+## GitFlow Chart:
+[<img src="http://devlabs-projects.com/docs/Git-Flow-for-DevLabs-1.1.svg" width="790" />](http://devlabs-projects.com/docs/Git-Flow-for-DevLabs-1.1.svg)

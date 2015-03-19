@@ -7,7 +7,7 @@
 
 Старт.
 
-<img src="http://i1.kym-cdn.com/photos/images/original/000/519/011/3f9.png" alt="DevLabs" width="790" />
+<img src="http://i1.kym-cdn.com/photos/images/original/000/519/011/3f9.png" width="790" />
 
 ## Основни настройки на Code Editor-а
 - 4 space-чета за indentation
