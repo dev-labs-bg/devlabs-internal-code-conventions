@@ -30,44 +30,44 @@
   Предлагам да се спазва конвенцията `Added`, `Changed`, `Fixed`, `TODO`. Според тази конвенция, commit съобщенията започват с една от изборените ключови думи. Например, ето извадка от `git log` на Labworm проекта:
 
 	>commit d898ab2689e10f05caf2186835c44ac6898a3573
-	>Author: Yavor Ivanov <yavor@devlabs.bg>
-	>Date:   Wed Aug 5 18:21:37 2015 +0300
-	>
-	>    Added: Base exporter.
-	>    TODO: Finish categories exporting.
-	>
-	>commit a46173394056a68afba2ab28c9e243d7d05245ff
-	>Author: Yavor Ivanov <yavor@devlabs.bg>
-	>Date:   Tue Aug 4 17:03:28 2015 +0300
-	>
-	>    Fixed: Removed left over debug lines.
-	>
-	>commit bab96ff3aea328555c5519cfd439cc92fdff0ae0
-	>Author: Yavor Ivanov <yavor@devlabs.bg>
-	>Date:   Tue Aug 4 15:05:23 2015 +0300
-	>
-	>    Added: csv_id column to the websites model.
-	>    Changed: Importer mode selection is now a comman argument instead of a
-	>    switch e.g: ./artisan import clicks overwrite instad of ./artisan import
-	>    clicks --overwrite.
-	>    Added: Extended importer framework to support Update operations.
-	>    ATTENTION Only the websites model update command is implemented. The
-	>    update command will simply fix the csv_id column in the database.
-	>
-	>commit 990ca4f461ae6eceea4192168b67e475ac567dd0
-	>Merge: c818f24 6f37311
-	>Author: Yavor Ivanov <yavor@devlabs.bg>
-	>Date:   Tue Aug 4 12:11:22 2015 +0300
-	>
-	>    Merge branch 'Beta' into feature-importer
-	>
-	>commit c818f2450234cd85ea15efbdc776407b55a9c57b
-	>Author: Yavor Ivanov <yavor@devlabs.bg>
-	>Date:   Tue Aug 4 12:05:18 2015 +0300
-	>
-	>    Added: csv_id fields to the traffic tables.
-	>    Changed: The traffic importers now identify records by the id column in
-	>    the csv as opposed to the url field.
+	Author: Yavor Ivanov <yavor@devlabs.bg>
+	Date:   Wed Aug 5 18:21:37 2015 +0300
+	
+	    Added: Base exporter.
+	    TODO: Finish categories exporting.
+	
+	commit a46173394056a68afba2ab28c9e243d7d05245ff
+	Author: Yavor Ivanov <yavor@devlabs.bg>
+	Date:   Tue Aug 4 17:03:28 2015 +0300
+	
+	    Fixed: Removed left over debug lines.
+	
+	commit bab96ff3aea328555c5519cfd439cc92fdff0ae0
+	Author: Yavor Ivanov <yavor@devlabs.bg>
+	Date:   Tue Aug 4 15:05:23 2015 +0300
+	
+	    Added: csv_id column to the websites model.
+	    Changed: Importer mode selection is now a comman argument instead of a
+	    switch e.g: ./artisan import clicks overwrite instad of ./artisan import
+	    clicks --overwrite.
+	    Added: Extended importer framework to support Update operations.
+	    ATTENTION Only the websites model update command is implemented. The
+	    update command will simply fix the csv_id column in the database.
+	
+	commit 990ca4f461ae6eceea4192168b67e475ac567dd0
+	Merge: c818f24 6f37311
+	Author: Yavor Ivanov <yavor@devlabs.bg>
+	Date:   Tue Aug 4 12:11:22 2015 +0300
+	
+	    Merge branch 'Beta' into feature-importer
+	
+	commit c818f2450234cd85ea15efbdc776407b55a9c57b
+	Author: Yavor Ivanov <yavor@devlabs.bg>
+	Date:   Tue Aug 4 12:05:18 2015 +0300
+	
+	    Added: csv_id fields to the traffic tables.
+	    Changed: The traffic importers now identify records by the id column in
+	    the csv as opposed to the url field.
 
   Някои хора използват императивните форми: `Add`, `Change`, `Fix`, `TODO`; както и други ключови думи. Пример за това е [repository-то на git](https://github.com/git/git/commits/master?page=6)
   
