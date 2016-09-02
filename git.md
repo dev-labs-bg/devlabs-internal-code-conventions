@@ -11,7 +11,7 @@ devlabs-internal-code-conventions
 ```
 
 ## 8те Git-Flow правила важащи ФОФИСА:
-1. Не сери/мажи в кода ... сериозно, недей, защото тъй да се каже, [това не е библейско](http://memebg.com/media/created/l5xo1t.jpg).
+1. Не сери/мажи в кода ... сериозно, недей, защото тъй да се каже, [това не е библейско](http://i.imgur.com/pe49xmv.jpg).
 2. В master всичко е стабилно, в develop са готови features & fixes.
 3. Не push-ваме в master (освен ако не правим hotfix или не пускаме release).
 4. Всеки feature/промяна започва от develop с име feature/номер-име (пр. feature/01-login).
